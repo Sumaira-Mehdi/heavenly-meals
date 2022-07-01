@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/virtual/FAQ.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<h1>User's List</h1>
+<table class="tablestyle">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>QUESTION</th>
+                <th>ANSWER</th>
+                <th>EDIT</th>
+                <th>DELETE</th>
+
+            </tr>
+        </thead>
+            <tbody>
+                 <% for (let faq of FaqData) {%>
+                <tr>
+                    <td>
+                        <%= faq._id%>
+                    </td>
+                    <td>
+                        <%= faq.question %>
+                    </td>
+                    <td>
+                        <%= faq.answer %>
+                    </td>
+                    
+                    <td>
+                        <a href="http://localhost:8080/update/<%=faq._id%>" class="edit"
+                            data-toggle="modal">Edit</a>
+                    </td>
+                    <td>
+                        <a href="http://localhost:8080/delete/<%=faq._id%>" class="delete">Delete</i></a>
+                    </td>
+                </tr>
+                <% } 
+            %>            
+        </tbody>
+    </table>
+
+    </body>
+
+    </html>

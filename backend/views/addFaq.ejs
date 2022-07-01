@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/virtual/addFaq.css">
+
+    <title>Document</title>
+</head>
+<!---
+<body>
+    <h1>Add Faq.</h1>
+      <form action="/add" method="POST">
+          <div>
+              <label for="">question</label>
+              <input type="text" name="question" placeholder="Enter your question">
+          </div>
+          <div>
+              <label for="">answer</label>
+              <input type="text" name="answer" placeholder="Enter your answer" >
+          </div>
+          <div>
+              <input type="submit" value="Submit">
+          </div>
+      </form>
+
+</body>-->
+<body>
+<div class = "main">
+  <h2>ADD FAQ </h2>
+  
+  
+  <div class="container">
+      <form action="/add" method="POST">
+      <div class="row">
+        <div class="col-25">
+          <label for="question">Question</label>
+        </div>
+        <div class="col-75">
+          <textarea id="question" name="question" placeholder="Write something.." style="width:40%;height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="answer">Answer</label>
+        </div>
+        <div class="col-75">
+          <textarea id="answert" name="answer" placeholder="Write something.." style="width:40%;height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Add">
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

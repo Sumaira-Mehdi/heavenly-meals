@@ -1,0 +1,148 @@
+
+/*					Feedback Form			*/
+.main_container{
+    background-color: black;
+}
+.fb{
+   /* background: url('../images/feedbackbg.png') no-repeat;*/
+    background-size: cover;
+    }
+    .footer{
+        display:flex;
+        justify-content:space-around;
+        padding:54px 0px;
+    }
+    .plate1 img{
+    position:absolute;
+    top:110px;
+    }
+    .plate1{
+        position:relative;
+    }
+
+    
+    .easy{
+    font-family: Pacifico;
+    font-size: 25px;
+    color: white;
+    }
+    
+    .address{
+    font-family: Times New Roman;
+    font-size: 15px;
+    color: white;
+    line-height: 0.15cm;
+    text-align: center;
+    }
+    
+    .locate{
+    margin-top: 66px;
+    }
+    
+    
+    .hours{
+    text-align:center;
+    }
+    
+    .time{
+    font-family: Times New Roman;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 47px;
+    line-height: 0.15cm;
+    }
+    
+    .social2{
+    padding-top: 84px;
+    padding-bottom: 56px;
+    }
+    
+    /*
+    .form{
+    margin-top: 54px;
+    padding-right: 40px;
+    }
+    */
+    #basic-form{
+    margin-top: -20px;
+    }
+    
+    #basic-form p{
+        position:relative;
+    }
+    #name-error, #email-error, #txtTel-error{
+        position:absolute;
+        top:33px;
+        left:30px;
+        color:#ffffff;
+    }
+    input[type=text], select {
+      width: 350px;
+      height: 30px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background:#323232;
+      color: white;
+    }
+    
+    input[type=email], select {
+      width: 350px;
+      height: 30px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background:#323232;
+      color: white;
+    }
+    
+    input[type=tel], select {
+      width: 350px;
+      height: 30px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background:#323232;
+      color: white;
+    }
+    
+    #msg{
+    width: 350px;
+     padding: 15px 20px;
+     border-radius: 10px;
+     box-sizing: border-box;
+     background: #323232;
+     color: white;
+    }
+    
+    .submit{
+    color: white;
+    background: #e7a331;
+    font-family: Times New Roman;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    }
+    
+    
+    .plate2 img{
+    position:absolute;
+    top: -420px;
+    left: 89.2%;
+    }
+    .plate2{
+        position:relative;
+    }
+    .copyright{
+        background:#000000;
+        font-family: Times New Roman;
+        font-size:15pt;
+        color:#ffffff;
+        padding:20px;
+        text-align:center;
+    }
+    

@@ -1,0 +1,92 @@
+/*
+@font-face {
+    font-family: Times New Roman;
+    
+    src: local('Times New Roman'), url("/my-app/public/Fonts/times/new/roman.ttf") format('truetype');
+
+  }
+  @font-face {
+    font-family: Pacifico;
+    src: url("/my-app/public/Fonts/Pacifico-Regular.ttf")
+    }
+  @font-face {
+    font-family: OpenSans;
+    src: url("/my-app/public/Fonts/OpenSans-Regular.ttf")
+    }  */
+  :root{--width:1170px;}
+  
+  .main_container{
+  background:black;
+  
+  margin: 0;
+  }
+  .box{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	/*background: url('/images/faqbg_02.png');
+	background-repeat:no-repeat;
+	background-size:cover;*/
+	top: -27px;
+}
+
+
+.accordion{
+	width: 950px;
+	margin: auto;
+
+}
+
+.faq{
+	margin: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 2em;
+	color: white;
+	/*font-family: Pacifico;*/
+	font-size: 30px;
+}
+
+h1{
+	text-align: center;
+}
+
+
+.ui-accordion-header {
+     
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+	font-weight: bolder;
+	border: 1px solid black;
+	color: white;
+	background: #e7a331;
+    transition: 0.4s;
+	/*font-family: Times New Roman;*/
+	font-size: 23px;
+}
+
+
+.ui-accordion-content:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+.ui-accordion-content {
+    /*padding: 1em 2.2em;*/
+    border-top: 0;
+    overflow: auto;
+    color: black;
+	/*font-family: Pacifico;
+	font-size: 20px;*/
+}
+ 
+
+

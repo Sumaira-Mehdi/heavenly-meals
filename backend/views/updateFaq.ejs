@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/virtual/updateFaq.css">
+
+    <title>Document</title>
+</head>
+<!---
+<body>
+    
+
+    <h1>Update Faq</h1>
+    <form action="/update/<%=FaqData.id%>" method="POST">
+            <div>
+                <label for="">question</label>
+                <input type="text" name="question" value="<%=FaqData.question%>">
+            </div>
+            <div>
+                <label for="">answer</label>
+                <input type="text" name="answer" value="<%=FaqData.answer%>" >
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+    </form>
+
+    </body>
+-->
+<body>
+<div class = "main">
+    <h2>FAQ Form</h2>
+    
+    
+    <div class="container">
+        <form action="/update/<%=FaqData.id%>" method="POST">
+        <div class="row">
+          <div class="col-25">
+            <label for="question">Question</label>
+          </div>
+          <div class="col-75">
+            <textarea id="question" name="question" value="<%=FaqData.question%>" placeholder="Write something.." style="width:40%;height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="answer">Answer</label>
+          </div>
+          <div class="col-75">
+            <textarea id="answert" name="answer" value="<%=FaqData.answer%>" placeholder="Write something.." style="width:40%;height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+</div>
+    </body>
+    </html>

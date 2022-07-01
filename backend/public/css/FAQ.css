@@ -1,0 +1,12 @@
+
+/*=======STYLING FAQ MODEL TABLE========*/
+
+table, th, td {
+    border:1px solid black;
+    width:100%;
+  }
+  td {
+    text-align: center;
+    height:30px;
+  }
+  

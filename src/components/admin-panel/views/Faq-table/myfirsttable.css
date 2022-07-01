@@ -1,0 +1,25 @@
+.main_heading{
+    text-align: center;
+    background-color: rgb(103, 103, 150);
+    padding:2px;
+    font-size: 20px ;
+    color:white;
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+}
+.add_box{
+   
+    width:40%;
+    color:black;
+
+}
+.table_box{
+    
+    width:40%;
+    width:40%;
+    color:black;
+
+
+}
