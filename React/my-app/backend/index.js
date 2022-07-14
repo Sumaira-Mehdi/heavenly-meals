@@ -48,7 +48,7 @@ app.use(session({
 
 //listening to port
 app.listen(PORT, '0.0.0.0', function () {
-    console.log(`Port is now running @ ${port}`)
+    console.log(`Port is now running @ ${PORT}`)
   });
 
 
