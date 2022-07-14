@@ -17,7 +17,7 @@ import cors from 'cors';
 dotenv.config()
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const port = process.env.API_PORT;         //defining port
+const PORT = process.env.API_PORT || 8080;         //defining port
 const app = express();  
 app.use(cors()) 
 app.use(express.json())                  // taking all express in a constant.
@@ -47,7 +47,7 @@ app.use(session({
 
 
 //listening to port
-app.listen(port || 8080, '0.0.0.0', function () {
+app.listen(PORT, '0.0.0.0', function () {
     console.log(`Port is now running @ ${port}`)
   });
 
