@@ -7,6 +7,8 @@ import { fileURLToPath } from 'url';
 import {dbData} from './database/connection.js'
 //import UserModel from "./models/user.js";
 //    session cookie work
+import path from 'node:path'
+
 
 import cookieParser from "cookie-parser";
 import session from "express-session";
@@ -24,6 +26,7 @@ app.use('/virtual',express.static('public/css'))
 app.use('/virtual',express.static('public/images'))
 app.use(router);
 app.set('view engine', 'ejs');              //defining the use of ejs.
+app.use(express.static(path.join(__dirname, "dist")))
 
 dbData();
 //    session cookie work

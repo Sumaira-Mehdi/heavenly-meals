@@ -18,7 +18,7 @@ import express from 'express';
 var router = express.Router();
 
 // ROUTES for USER sign up.
-router.get('/', SignUphomeView);
+//router.get('/', SignUphomeView);
 router.post('/register', createUser);
 
 
