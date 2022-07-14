@@ -17,7 +17,7 @@ import cors from 'cors';
 dotenv.config()
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const PORT = process.env.API_PORT || 8080;         //defining port
+const PORT = process.env.PORT || 8080;         //defining port
 const app = express();  
 app.use(cors()) 
 app.use(express.json())                  // taking all express in a constant.
