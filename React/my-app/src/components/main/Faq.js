@@ -20,7 +20,7 @@ const Faq = () => {
   const [myFaq, getMyFaq] = useState()
   const getFaqData = () => {
 
-    axios.get('http://localhost:8080/admin/faq')
+    axios.get('/admin/faq')
       .then(function (response) {
 
         // console.log(response.data)
