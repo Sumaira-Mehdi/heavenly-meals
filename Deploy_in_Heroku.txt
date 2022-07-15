@@ -1,0 +1,41 @@
+I have the following project structure:
+
+my-app (react application)
+	- src
+	- public_html
+	- build (created by react build)
+	- backend (expressjs & its routes)
+		- dist (react built assets)
+
+
+Required code changes
+---------------------
+
+1. Serve static files from dist folder, add code as following:
+
+	app.use(express.static(path.join(__dirname, "dist")))
+
+2. Must listen to '0.0.0.0' ip address as following:
+
+	const PORT = process.env.PORT || 8080; //defining port
+	app.listen(PORT, '0.0.0.0', function() {
+		console.log(`Port is now running @ ${PORT}`);
+	});
+
+3. All urls used in axios/fetch calls in react app should start with '/'. 
+   There should not be any host & port in the urls for fetching data from backend, for e.g. see the following code:
+   
+   axios.get('/admin/faq').then(response => {});
+
+
+Follow these steps:
+--------------------
+
+1. Run `npm run build` in my-app folder, this will build react app and produce js/css/html files in `build` folder
+2. Copy all files from build folder into a new folder `dist` (see above - react built assets) within `my-app/backend` folder
+3. Push changes
+4. Create an app in heroku
+5. Connect your github repo in Heroku
+6. Deploy your app
+
+
