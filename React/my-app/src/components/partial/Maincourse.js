@@ -1,7 +1,9 @@
 import axios from "axios";
 
 import React, { useEffect, useState } from "react";
-import Counter from "../../Utils/Counter";
+import Counter from "./Counter";
+import "../main/completeProjectStyling.css";
+
 
 
 const Maincourse = ({ setCartTotal, setItems }) => {
@@ -53,8 +55,8 @@ const Maincourse = ({ setCartTotal, setItems }) => {
                       <li key={key}></li>
                       <li>
                         <img src="images/drinks-menu.png" alt="maincourse" />
-                        {data.menu}.......................................
-                        ${data.price}
+                        {data.menu}
+                        ........................................${data.price}
                         <Counter
                           total={total}
                           setTotal={setTotal}

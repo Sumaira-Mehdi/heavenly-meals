@@ -10,7 +10,7 @@ export default function MenuView() {
   const getMenu = async () => {
     try {
       const {data} = await axios.get("/admin/menu");
-      console.log(data)
+      //console.log(data)
       return data;
     } catch(e) {
       console.log(e);
@@ -30,10 +30,10 @@ export default function MenuView() {
   };
   return (
     <>
-      <div>
-        <body className="main-container">
+      
+       
           <h1 className="rew_head"> Menu View</h1>
-          <table>
+          <table className="table_box">
             <thead>
               <tr>
                 <th>key</th>
@@ -84,8 +84,8 @@ export default function MenuView() {
                 })}
             </tbody>
           </table>
-        </body>
-      </div>
+        
+      
     </>
   );
 }

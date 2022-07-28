@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import "./Menu.css";
+
+import "../main/completeProjectStyling.css";
 import Header from "../../Partials/Header/Header";
 import Drinks from "./Drinks";
 import Desserts from "./Desserts";

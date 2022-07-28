@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
 import { HiMinusCircle, HiPlusCircle } from "react-icons/hi";
+import "../main/completeProjectStyling.css";
+
+
+
 
 function Counter({ setTotal, setCartTotal, setItems, price }) {
   const [counter, setCounter] = useState(0);
@@ -8,7 +12,7 @@ function Counter({ setTotal, setCartTotal, setItems, price }) {
 
   
   return (
-    <div>
+    <div className="counterContainer">
       <button
         className="react_minus"
         onClick={() => {
@@ -46,7 +50,7 @@ function Counter({ setTotal, setCartTotal, setItems, price }) {
         <HiMinusCircle />
       </button>
 
-      <input className="react_input" type="text" placeholder={counter} />
+      <input className="react_input" type="text" placeholder={counter}/>
       <button
         className="react_plus"
         onClick={() => {

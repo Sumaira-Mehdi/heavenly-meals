@@ -50,7 +50,7 @@ export default function MenuUpdate() {
         <h1>Menu Edit</h1>
         <div className="container">
           <form>
-            <div className="row">
+            <div className="rrow">
               <div className="col-25">
                 <label for="category">Choose category:</label>
               </div>
@@ -58,7 +58,7 @@ export default function MenuUpdate() {
                 <select
                   className="input"
                   onChange={handleInputs}
-                  class="category"
+                  class="ccategory"
                   name="category"
                   value={menuData.category}
                   id="category"
@@ -70,13 +70,13 @@ export default function MenuUpdate() {
               </div>
             </div>
 
-            <div className="row">
+            <div className="rrow">
               <div className="col-25">
                 <label for="menu">menu</label>
               </div>
               <div className="col-75">
                 <input
-                  className="input"
+                  className="menuinput"
                   onChange={handleInputs}
                   type="text"
                   name="menu"
@@ -87,7 +87,7 @@ export default function MenuUpdate() {
               </div>
             </div>
 
-            <div className="row">
+            <div className="rrow">
               <div className="col-25">
                 <label for="price">price</label>
               </div>
@@ -103,7 +103,7 @@ export default function MenuUpdate() {
                 />
               </div>
             </div>
-            <div className="row">
+            <div className="rrow">
               <input className="input" type="submit" value="Update" onClick={PostData} />
             </div>
           </form>

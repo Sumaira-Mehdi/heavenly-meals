@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 //import { useNavigate } from "react-router-dom";
 import MenuView from "./MenuView";
-
+import './MenuView.css';
 
 //let navigate;
 export default function MenuAdd() {
@@ -22,7 +22,7 @@ export default function MenuAdd() {
 
   const PostData = (e) => {
     e.preventDefault();
-    console.log(menu);
+    //  console.log(menu);
 
     let formdata = new FormData(e.target);
     const url = "/userscreate";
@@ -38,17 +38,20 @@ export default function MenuAdd() {
       });*/
   }
 
-
+  if(status)
+    return <MenuAdd />
+  else
+  
   return (
     <>
-    
+
       <div className="main_heading">
         <h1>Menu Table</h1>
       </div>
       <div className="main-container">
         <div className="add_box">
           <h1>Add Menu</h1>
-          <div className="_container">
+          <div className="container">
             <form onSubmit={PostData}>
               <div className="b-row">
                 <div className="col-25">
@@ -56,11 +59,10 @@ export default function MenuAdd() {
                 </div>
                 <div className="col-75">
                   <select
-                    className="input"
+                    className="menu"
                     onChange={(e) => handleInputs(e)}
                     name="category"
                     value={menu.category}
-                    type="text"
                   >
                     <option value="Drinks">Drinks</option>
                     <option value="Maincourse">MainCourse</option>
@@ -75,7 +77,7 @@ export default function MenuAdd() {
                 </div>
                 <div className="col-75">
                   <input
-                    className="input"
+                    className="inputmmenu"
                     onChange={(e) => handleInputs(e)}
                     type="text"
                     name="menu"
@@ -105,9 +107,10 @@ export default function MenuAdd() {
                 <input className="input" type="submit" value="Add" />
               </div>
             </form>
-            <MenuView />
+           
           </div>
         </div>
+        <MenuView />
       </div>
     </>
   );

@@ -246,7 +246,7 @@ const listMenu = (req, res) => {
    reviewsDB
      .find()
      .sort({ _id: -1 })
-     .limit(12)
+     .limit(8)
      .then((userData) => {
        // res.render("views", { userData });
        res.send(userData);

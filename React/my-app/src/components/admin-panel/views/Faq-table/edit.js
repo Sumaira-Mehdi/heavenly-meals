@@ -49,7 +49,7 @@ const Edit = () => {
 
         <div className="container">
           <form >
-            <div className="row">
+            <div className="rrow">
               <div className="col-25">
                 <label htmlFor="question">Question</label>
               </div>
@@ -57,7 +57,7 @@ const Edit = () => {
                 <input type="textarea" id="question" value={myFaq.question} name="question" onChange={handleInputs} />
               </div>
             </div>
-            <div className="row">
+            <div className="rrow">
               <div className="col-25">
                 <label htmlFor="answer">Answer</label>
               </div>
@@ -65,7 +65,7 @@ const Edit = () => {
                 <input type="textarea" id="answer" value={myFaq.answer} name="answer" onChange={handleInputs} />
               </div>
             </div>
-            <div className="row">
+            <div className="rrow">
               <input type="submit" value="Add" onClick={postFaqData} />
             </div>
           </form>
