@@ -9,7 +9,7 @@ export default function MenuView() {
 
   const getMenu = async () => {
     try {
-      const {data} = await axios.get("/admin/menu");
+      const {data} = await axios.get("/api/admin/menu");
       //console.log(data)
       return data;
     } catch(e) {
@@ -22,7 +22,7 @@ export default function MenuView() {
   }, []);
 
   const deletemenu = async (id) => {
-    await axios.delete(`/menu/delete/${id}`);
+    await axios.delete(`/api/menu/delete/${id}`);
     var newMenu = menu.filter((item) => {
       return item._id !== id;
     });

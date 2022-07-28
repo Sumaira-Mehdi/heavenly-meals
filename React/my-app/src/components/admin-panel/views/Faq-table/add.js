@@ -26,7 +26,7 @@ const Add = () => {
 
         e.preventDefault();
         const { question, answer } = formData;
-        const res = await fetch('http://localhost:8080/users', {
+        const res = await fetch('/api/users', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

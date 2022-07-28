@@ -20,7 +20,7 @@ const Faq = () => {
   const [myFaq, getMyFaq] = useState()
   const getFaqData = () => {
 
-    axios.get('/admin/faq')
+    axios.get('/api/admin/faq')
       .then(function (response) {
 
         // console.log(response.data)

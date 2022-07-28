@@ -25,7 +25,7 @@ export default function MenuAdd() {
     //  console.log(menu);
 
     let formdata = new FormData(e.target);
-    const url = "/userscreate";
+    const url = "/api/userscreate";
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formdata),

@@ -8,7 +8,7 @@ const Reviews = () => {
   const [products, getProduct] = useState();
   const getProductData = () => {
     axios
-      .get("/feedback", {})
+      .get("/api/feedback", {})
 
       .then(function (response) {
         console.log(response.data);
@@ -24,7 +24,7 @@ const Reviews = () => {
       });
   };
   useEffect(() => {
-    console.log("hello syeda");
+    //console.log("hello syeda");
     getProductData();
   }, []);
   return (

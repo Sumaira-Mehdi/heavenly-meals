@@ -23,7 +23,7 @@ const Register = () => {
         e.preventDefault();
         const  {name,email,password,cpassword} = user; 
       
-        const res = await fetch('/register', {
+        const res = await fetch('/api/register', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

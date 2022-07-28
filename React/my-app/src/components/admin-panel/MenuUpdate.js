@@ -15,7 +15,7 @@ export default function MenuUpdate() {
   useEffect(() => {
     async function getMenuData() {
       try {
-        const menuData = await axios.get(`/menu/edit/${id}`);
+        const menuData = await axios.get(`/api/menu/edit/${id}`);
         console.log('menuData', menuData);
         setMenu(menuData.data);
       } catch (error) {
@@ -36,7 +36,7 @@ export default function MenuUpdate() {
     e.preventDefault();
 
     try {
-      await axios.put(`/menu/update/${id}`, menuData);
+      await axios.put(`/api/menu/update/${id}`, menuData);
       navigate("/admin/menu", { replace: true });
     } catch (error) {
       console.log("wrong");

@@ -13,7 +13,7 @@ const Edit = () => {
   useEffect(() => {
     async function getFaqData() {
       try {
-        const myFaq = await axios.get(`/update/${id}`)
+        const myFaq = await axios.get(`/api/update/${id}`)
         setMyFaq(myFaq.data);
       } catch (error) {
         console.log("something is wrong");
@@ -31,7 +31,7 @@ const Edit = () => {
   async function postFaqData(e) {
     e.preventDefault()
     try {
-      await axios.put(`/update/${id}`, myFaq)
+      await axios.put(`/api/update/${id}`, myFaq)
       navigate("/admin/faq", { replace: true })
 
     } catch (error) {

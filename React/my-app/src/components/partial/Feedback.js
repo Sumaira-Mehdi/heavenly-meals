@@ -50,7 +50,7 @@ export default function Feedback() {
     }
 
     let feedbackdata = new FormData(e.target);
-    const url = "/feedback";
+    const url = "/api/feedback";
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(feedbackdata),

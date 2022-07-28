@@ -12,7 +12,7 @@ const Login = () => {
 
     const loginUser = async () => {
     
-        const data = await fetch('/signin' , {
+        const data = await fetch('/api/signin' , {
             method: "POST",
             headers: {
                 "content-Type": "application/json"

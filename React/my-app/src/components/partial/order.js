@@ -57,7 +57,7 @@ function Order() {
     }
 
     let formdata = new FormData(e.target);
-    const url = "/order";
+    const url = "/api/order";
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formdata),

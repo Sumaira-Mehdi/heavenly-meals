@@ -28,7 +28,7 @@ const Desserts = ({ setCartTotal, setItems }) => {
       });
   };
   useEffect(() => {
-    console.log("hello syeda");
+    //console.log("hello syeda");
     getProductData();
   }, []);
 

@@ -15,7 +15,7 @@ const List = () => {
    
     const  getFaqData = () => {
       
-      axios.get('http://localhost:8080/admin/faq')
+      axios.get('/api/admin/faq')
       .then(function (response) {  
         setMyFaq(response.data);
       })
@@ -33,7 +33,7 @@ const List = () => {
 
 
     const deleteFaq = async id => {
-        await axios.delete(`/delete/${id}`);
+        await axios.delete(`/api/admin/faq/${id}`);
         var newFaq = myFaq.filter((item) => {
           return item._id !== id;
         })
