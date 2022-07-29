@@ -64,8 +64,8 @@ export default function Feedback() {
 
   return (
     <div className="footer">
-      <div class="form">
-        <p class="easy">Feedback Form</p>
+      <div className="form">
+        <p className="easy">Feedback Form</p>
         <form onSubmit={PostReview} id="basic-form">
           <p>
             <input
@@ -73,12 +73,12 @@ export default function Feedback() {
               id="name"
               name="name"
               value={feedback.name}
-              minlength="3"
+              minLength="3"
               type="text"
               placeholder="Name"
             />
           </p>
-          <p class="order_error">{formerror.name}</p>
+          <p className="order_error">{formerror.name}</p>
           <p>
             <input
               onChange={(e) => handleInputs(e)}
@@ -89,7 +89,7 @@ export default function Feedback() {
               placeholder="Email"
             />
           </p>
-          <p class="order_error">{formerror.email}</p>
+          <p className="order_error">{formerror.email}</p>
           <p>
             <input
               onChange={(e) => handleInputs(e)}
@@ -100,7 +100,7 @@ export default function Feedback() {
               placeholder="Phone"
             />
           </p>
-          <p class="order_error">{formerror.phone}</p>
+          <p className="order_error">{formerror.phone}</p>
           <p>
             <textarea
               onChange={(e) => handleInputs(e)}
@@ -112,9 +112,9 @@ export default function Feedback() {
               cols="33"
             ></textarea>
           </p>
-          <p class="order_error">{formerror.message}</p>
-          <p class="save">
-            <input class="submit" type="submit" value="SUBMIT" />
+          <p className="order_error">{formerror.message}</p>
+          <p className="save">
+            <input className="submit" type="submit" value="SUBMIT" />
           </p>
         </form>
       </div>

@@ -73,7 +73,7 @@ export default function MenuAdd() {
 
               <div className="b-row">
                 <div className="col-sm">
-                  <label for="menu">menu</label>
+                  <label htmlFor="menu">menu</label>
                 </div>
                 <div className="col-75">
                   <input

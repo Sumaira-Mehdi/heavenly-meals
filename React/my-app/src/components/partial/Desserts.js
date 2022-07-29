@@ -15,7 +15,7 @@ const Desserts = ({ setCartTotal, setItems }) => {
         },
       })
       .then(function (response) {
-        console.log(response.data);
+        //console.log(response.data);
         // handle success
         getProduct(response.data);
       })
@@ -43,9 +43,7 @@ const Desserts = ({ setCartTotal, setItems }) => {
             <ul>
               {products &&
                 products.map((data, key) => {
-                  return (
-                    <>
-                      
+                  return (                      
                       <li key={key}>
                         <img src="images/drinks-menu.png" alt="drinks" />
                         {data.menu}
@@ -58,7 +56,6 @@ const Desserts = ({ setCartTotal, setItems }) => {
                           price={data.price}
                         />
                       </li>
-                    </>
                   );
                 })}
             </ul>

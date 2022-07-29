@@ -45,12 +45,12 @@ const Login = () => {
                         <hr />
 
 
-                        <label htmlFor="email"><i class="zmdi zmdi-account"  ></i><b>  Email</b></label>
+                        <label htmlFor="email"><i className="zmdi zmdi-account"  ></i><b>  Email</b></label>
                         <input className="regis_input" type="text" value = {email} onChange = {(e) => setEmail(e.target.value)} placeholder="Enter Email" name="email" id="email" required />
 
 
 
-                        <label htmlFor="psw"><i class="zmdi zmdi-lock"></i>  <b>  Password</b></label>
+                        <label htmlFor="psw"><i className="zmdi zmdi-lock"></i>  <b>  Password</b></label>
                         <input className="regis_input" type="password" value = {password} onChange = {(e) => setPassword(e.target.value)} placeholder="Enter Password" name="password" id="psw" required />
 
 

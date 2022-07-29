@@ -17,7 +17,7 @@ const Maincourse = ({ setCartTotal, setItems }) => {
         },
       })
       .then(function (response) {
-        console.log(response.data);
+        //console.log(response.data);
         // handle success
         getProduct(response.data);
       })
@@ -30,7 +30,7 @@ const Maincourse = ({ setCartTotal, setItems }) => {
       });
   };
   useEffect(() => {
-    console.log("hello syeda");
+    //console.log("hello syeda");
     getProductData();
   }, []);
 
@@ -51,9 +51,7 @@ const Maincourse = ({ setCartTotal, setItems }) => {
               {products &&
                 products.map((data, key) => {
                   return (
-                    <>
-                      <li key={key}></li>
-                      <li>
+                      <li key={key}>
                         <img src="images/drinks-menu.png" alt="maincourse" />
                         {data.menu}
                         ........................................${data.price}
@@ -63,9 +61,9 @@ const Maincourse = ({ setCartTotal, setItems }) => {
                           setCartTotal={setCartTotal}
                           setItems={setItems}
                           price={data.price}
+                          key={key}
                         />
                       </li>
-                    </>
                   );
                 })}
             </ul>

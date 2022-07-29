@@ -5,7 +5,7 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
-    Switch
+    HashRouter
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -34,7 +34,7 @@ import Thankyou from "./components/partial/Thankyou";
 function App() {
     return (
         <div className="App">
-            <Router>
+            <HashRouter>
                 <Routes>
                     {/* <Route path="/admin/Faq_table" element = {<Faq_table/>} />*/}
                     {/*video routes*/}
@@ -55,8 +55,8 @@ function App() {
                         <Route path="/order" element={<Order />} />
                         {/*   <Route path="*" element = {<ErrorPage/>} />*/}
                     </Route>
-                </Routes>
-            </Router>
+                    </Routes>
+            </HashRouter>
         </div>
     );
 }

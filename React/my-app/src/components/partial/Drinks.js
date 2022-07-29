@@ -18,8 +18,7 @@ const Drinks = ({ setCartTotal, setItems }) => {
       })
 
       .then(function (response) {
-        console.log(response.data);
-
+        //console.log(response.data);
         getProduct(response.data);
       })
       .catch(function (error) {
@@ -28,7 +27,7 @@ const Drinks = ({ setCartTotal, setItems }) => {
       .then(function () {});
   };
   useEffect(() => {
-    console.log("hello syeda");
+    //console.log("hello syeda");
     getProductData();
   }, []);
 
@@ -43,10 +42,7 @@ const Drinks = ({ setCartTotal, setItems }) => {
               {products &&
                 products.map((data, key) => {
                   return (
-                    <>
-                      <li key={key}></li>
-
-                      <li>
+                      <li key={key}>
                         <img src="images/drinks-menu.png" alt="drinks" />
                         {data.menu}
                         ........................................$
@@ -59,7 +55,6 @@ const Drinks = ({ setCartTotal, setItems }) => {
                           price={data.price}
                         />
                       </li>
-                    </>
                   );
                 })}
             </ul>

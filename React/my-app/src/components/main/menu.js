@@ -20,15 +20,15 @@ const Menu = () => {
         </section>
       </section>
     
-        <section class="menu-container">
-          <div class="chillies-img">
+        <section className="menu-container">
+          <div className="chillies-img">
             <img src="Images/chillies.png" alt="chillies" />
           </div>
-          <section class="inner-container">
-            <div class="menu-heading">
-              <div class="menu-heading-1">
+          <section className="inner-container">
+            <div className="menu-heading">
+              <div className="menu-heading-1">
                 <img src="Images/amazing.png" alt="amazing" />
-                <div class="menu-heading-2">DELICIOUS</div>
+                <div className="menu-heading-2">DELICIOUS</div>
               </div>
             </div>
 

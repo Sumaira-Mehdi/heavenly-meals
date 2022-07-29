@@ -49,9 +49,8 @@ export default function MenuView() {
               {menu &&
                 menu.map((data, key) => {
                   return (
-                    <>
-                      <tr>
-                        <td>key={key}</td>
+                      <tr key={key}>
+                        <td>{key+1}</td>
                         <td>{data._id}</td>
                         <td>{data.menu}</td>
                         <td>{data.price}</td>
@@ -79,7 +78,6 @@ export default function MenuView() {
                           </Link>
                         </td>
                       </tr>
-                    </>
                   );
                 })}
             </tbody>
