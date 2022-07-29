@@ -7,21 +7,21 @@ const Main_background = () => {
         <div className='carosel'>
             <Carousel className="flexslider">
                 <Carousel.Item className='slides'>
-                    <img className="slider-image d-block w-100" src="Images/slider1_adobe_express.jpeg" alt="slider" />
+                    <img className="slider-image d-block w-100" src="images/slider1_adobe_express.jpeg" alt="slider" />
 
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="slider-image d-block w-100" src="Images/slider2_adobe_express.jpeg" alt="slider" />
+                    <img className="slider-image d-block w-100" src="images/slider2_adobe_express.jpeg" alt="slider" />
 
  
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="slider-image d-block w-100" src="Images/slider3_adobe_express.jpeg" alt="slider" />
+                    <img className="slider-image d-block w-100" src="images/slider3_adobe_express.jpeg" alt="slider" />
 
 
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="slider-image d-block w-100" src="Images/slider4_adobe_express.jpeg" alt="slider" />
+                    <img className="slider-image d-block w-100" src="images/slider4_adobe_express.jpeg" alt="slider" />
 
 
                 </Carousel.Item>
