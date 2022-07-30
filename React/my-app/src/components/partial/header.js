@@ -54,8 +54,6 @@ function Header() {
                             <li><NavLink to="/faq">FAQ</NavLink></li>
                             <li><NavLink to="/gallery" >Gallery</NavLink></li>
                             <li><NavLink to="/reviews">Reviews</NavLink></li>
-                          
-                            
                         </ul>
                     </nav>
                 </div>
