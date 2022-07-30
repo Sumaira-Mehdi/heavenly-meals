@@ -54,7 +54,6 @@ const Menu = () => {
             <div
               onClick={() => {
                 navigate("/order", {
-                  replace: true,
                   state: {
                     cartTotal: cartTotal,
                   },
