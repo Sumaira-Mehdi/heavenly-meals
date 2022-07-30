@@ -23,6 +23,12 @@ app.use(router);
 app.set('view engine', 'ejs');              //defining the use of ejs.
 app.use(express.static(path.join(__dirname, "dist")))
 
+// Express serves up index.html file if  doesn't recocgnize route
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "dist", "index.html"))
+})
+
+
 dbData();
 
 //listening to port
